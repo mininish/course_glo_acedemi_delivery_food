@@ -1,115 +1,287 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/style.css" />
     <title>Food delivery</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="page-wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header-box">
-                    <div class="header-logo logo">
-                        <img src="./static/img/logo.svg" alt="logo">
-                    </div>
-
-                    <div class="header-controls">
-                        <button class="btn btn-primary">
-                            <img src="static/img/icons/icon-user.svg" alt="user">
-                            Войти
-                        </button>
-
-                        <button class="btn btn-outline">
-                            <img src="static/img/icons/icon-cart.svg" alt="shopping-cart">
-                            Корзина
-                        </button>
-                    </div>
-                </div>
+      <header class="header">
+        <div class="container">
+          <div class="header-box">
+            <div class="header-logo logo">
+              <img src="./static/img/logo.svg" alt="logo" />
             </div>
-        </header>
 
-        <main class="main">
-            <section class="banner">
-                <div class="container">
-                    <div class="banner-item">
-                        <div class="content">
-                            <h2 class="banner-item--title">
-                                Онлайн-сервис <br>доставки еды на дом
-                            </h2>
+            <div class="header-controls">
+              <button class="btn btn-primary">
+                <img src="static/img/icons/icon-user.svg" alt="user" />
+                Войти
+              </button>
 
-                            <p class="banner-item--subtitle">
-                                Блюда из любимого ресторана привезет курьер в перчатках,
-                                маске и с антисептиком
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="products">
-                <div class="container">
-                    <div class="products-header">
-                        <h3 class="products-header--title">Рестораны</h3>
-
-                        <input id="product-search" type="text" class="products-header--search"
-                            placeholder="Поиск блюд и ресторанов" />
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-
-            <div class="container">
-                <div class="footer-box">
-                    <div class="footer-logo logo">
-                        <img src="./static/img/logo.svg" alt="logo">
-                    </div>
-
-                    <ul class="footer-nav">
-                        <li>
-                            <a href="">Ресторанам</a>
-                        </li>
-
-                        <li>
-                            <a href="">Курьерам</a>
-                        </li>
-
-                        <li>
-                            <a href="">Пресс-центр</a>
-                        </li>
-
-                        <li>
-                            <a href="">Контакты</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer-social">
-                        <a href="">
-                            <img src="static/img/icons/icon-instagram.svg" alt="instagram">
-                        </a>
-
-                        <a href="">
-                            <img src="static/img/icons/icon-facebook.svg" alt="facebook">
-                        </a>
-
-                        <a href="">
-                            <img src="static/img/icons/icon-vk.svg" alt="vk">
-                        </a>
-                    </div>
-                </div>
+              <button class="btn btn-outline">
+                <img src="static/img/icons/icon-cart.svg" alt="shopping-cart" />
+                Корзина
+              </button>
             </div>
-        </footer>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="banner">
+          <div class="container">
+            <div class="banner-item">
+              <div class="content">
+                <h2 class="banner-item--title">
+                  Онлайн-сервис <br />доставки еды на дом
+                </h2>
+
+                <p class="banner-item--subtitle">
+                  Блюда из любимого ресторана привезет курьер в перчатках, маске
+                  и с антисептиком
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="products">
+          <div class="container">
+            <div class="products-header">
+              <h3 class="products-header--title">Рестораны</h3>
+
+              <input
+                id="product-search"
+                type="text"
+                class="products-header--search"
+                placeholder="Поиск блюд и ресторанов"
+              />
+            </div>
+
+            <div class="products-wrapper">
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img src="static/img/goods/pizza-plus.jpg" alt="pizza plus" />
+                </div>
+
+                <div class="product-card__description">
+                  <div class="product-card__description--row">
+                    <h4 class="product-card__description--title">Пицца плюс</h4>
+
+                    <span class="product-card__description--badge">50 мин</span>
+                  </div>
+
+                  <div class="product-card__description--row">
+                    <div class="info">
+                      <div class="rating">
+                        <img src="static/img/icons/icon-star.svg" alt="star" />
+                        <span class="stars-count">4.5</span>
+                      </div>
+
+                      <span class="price">От 900 Р</span>
+
+                      <span class="group">Пицца</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img src="static/img/goods/tanuki.jpg" alt="tanuki" />
+                </div>
+
+                <div class="product-card__description">
+                  <div class="product-card__description--row">
+                    <h4 class="product-card__description--title">Тануки</h4>
+
+                    <span class="product-card__description--badge">50 мин</span>
+                  </div>
+
+                  <div class="product-card__description--row">
+                    <div class="info">
+                      <div class="rating">
+                        <img src="static/img/icons/icon-star.svg" alt="star" />
+                        <span class="stars-count">4.5</span>
+                      </div>
+
+                      <span class="price">От 900 Р</span>
+
+                      <span class="group">Пицца</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img src="static/img/goods/food-band.jpg" alt="food band" />
+                </div>
+
+                <div class="product-card__description">
+                  <div class="product-card__description--row">
+                    <h4 class="product-card__description--title">Food Band</h4>
+
+                    <span class="product-card__description--badge">50 мин</span>
+                  </div>
+
+                  <div class="product-card__description--row">
+                    <div class="info">
+                      <div class="rating">
+                        <img src="static/img/icons/icon-star.svg" alt="star" />
+                        <span class="stars-count">4.5</span>
+                      </div>
+
+                      <span class="price">От 900 Р</span>
+
+                      <span class="group">Пицца</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img src="static/img/goods/jadina-pizza.jpg" alt="жадина пицца" />
+                </div>
+
+                <div class="product-card__description">
+                  <div class="product-card__description--row">
+                    <h4 class="product-card__description--title">Жадина пицца</h4>
+
+                    <span class="product-card__description--badge">50 мин</span>
+                  </div>
+
+                  <div class="product-card__description--row">
+                    <div class="info">
+                      <div class="rating">
+                        <img src="static/img/icons/icon-star.svg" alt="star" />
+                        <span class="stars-count">4.5</span>
+                      </div>
+
+                      <span class="price">От 900 Р</span>
+
+                      <span class="group">Пицца</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img src="static/img/goods/food-point.jpg" alt="food point" />
+                </div>
+
+                <div class="product-card__description">
+                  <div class="product-card__description--row">
+                    <h4 class="product-card__description--title">Точка еды</h4>
+
+                    <span class="product-card__description--badge">50 мин</span>
+                  </div>
+
+                  <div class="product-card__description--row">
+                    <div class="info">
+                      <div class="rating">
+                        <img src="static/img/icons/icon-star.svg" alt="star" />
+                        <span class="stars-count">4.5</span>
+                      </div>
+
+                      <span class="price">От 900 Р</span>
+
+                      <span class="group">Пицца</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="product-card__image">
+                  <img src="static/img/goods/pizza-burger.jpg" alt="pizza burger" />
+                </div>
+
+                <div class="product-card__description">
+                  <div class="product-card__description--row">
+                    <h4 class="product-card__description--title">Pizza burger</h4>
+
+                    <span class="product-card__description--badge">50 мин</span>
+                  </div>
+
+                  <div class="product-card__description--row">
+                    <div class="info">
+                      <div class="rating">
+                        <img src="static/img/icons/icon-star.svg" alt="star" />
+                        <span class="stars-count">4.5</span>
+                      </div>
+
+                      <span class="price">От 900 Р</span>
+
+                      <span class="group">Пицца</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          `
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-box">
+            <div class="footer-logo logo">
+              <img src="./static/img/logo.svg" alt="logo" />
+            </div>
+
+            <ul class="footer-nav">
+              <li>
+                <a href="">Ресторанам</a>
+              </li>
+
+              <li>
+                <a href="">Курьерам</a>
+              </li>
+
+              <li>
+                <a href="">Пресс-центр</a>
+              </li>
+
+              <li>
+                <a href="">Контакты</a>
+              </li>
+            </ul>
+
+            <div class="footer-social">
+              <a href="">
+                <img
+                  src="static/img/icons/icon-instagram.svg"
+                  alt="instagram"
+                />
+              </a>
+
+              <a href="">
+                <img src="static/img/icons/icon-facebook.svg" alt="facebook" />
+              </a>
+
+              <a href="">
+                <img src="static/img/icons/icon-vk.svg" alt="vk" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
